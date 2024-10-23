@@ -77,8 +77,8 @@ This function returns a random Malay saying that does not match any of the exclu
 **Example**:
 
 ```typescript
-const excluded = 'Sikit-sikit, lama-lama jadi bukit.';
-const randomQuote = getRandomPerumpamaanExcludingKeyword(excluded);
+const excludedWord = 'gajah';
+const randomQuote = getRandomPerumpamaanExcludingKeyword(excludedWord);
 console.log(randomQuote);
 ```
 

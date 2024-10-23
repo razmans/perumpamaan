@@ -1,5 +1,12 @@
 import { dictionary, Quote } from './perumpamaan.js';
 
+/**
+ * @module getRandomPerumpamaan
+ * @description Mengambil perumpamaan secara rawak dari senarai perumpamaan
+ * @returns {Quote} Random perumpamaan
+ * @example
+ * ```const perumpamaan = getRandomPerumpamaan()```;
+ */
 export const getRandomPerumpamaan = (): Quote => {
   const randomIndex = Math.floor(Math.random() * dictionary.length);
   return dictionary[randomIndex];

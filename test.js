@@ -7,7 +7,7 @@ console.log('Testing getPerumpamaanWithKeyword for "pagar"...');
 const quotesWithKeyword = getPerumpamaanWithKeyword('pagar');
 console.log(quotesWithKeyword);
 // Test getRandomPerumpamaanExcludingKeyword
-console.log('Testing getRandomPerumpamaanExcludingKeyword...');
+console.log('Testing getRandomPerumpamaanExcludingKeyword for "lama"...');
 const excludedQuotes = 'lama';
 const randomQuoteExcluding = getRandomPerumpamaanExcludingKeyword(excludedQuotes);
 console.log(randomQuoteExcluding);

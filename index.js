@@ -19,7 +19,7 @@ export const getRandomPerumpamaan = () => {
  * ```const perumpamaan = getPerumpamaanWithKeyword('pagar')```;
  */
 export const getPerumpamaanWithKeyword = (keyword) => {
-    return dictionary.filter((quote) => quote.quote.includes(keyword) || quote.meaning.includes(keyword));
+    return dictionary.filter(quote => hasKeyword(quote, keyword));
 };
 /**
  * @module getRandomPerumpamaanExcludingKeyword
@@ -30,8 +30,11 @@ export const getPerumpamaanWithKeyword = (keyword) => {
  * ```const perumpamaan = getRandomPerumpamaanExcludingKeyword('mengikut')```;
  */
 export const getRandomPerumpamaanExcludingKeyword = (excludedQuotes) => {
-    const filteredQuotes = dictionary.filter((quote) => !excludedQuotes.includes(quote.quote) ||
-        !excludedQuotes.includes(quote.meaning));
+    const filteredQuotes = dictionary.filter(quote => !hasKeyword(quote, excludedQuotes))
     const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
     return filteredQuotes[randomIndex];
+};
+
+const hasKeyword = (quote, keyword) => {
+    return quote.quote.includes(keyword) || quote.meaning.includes(keyword);
 };

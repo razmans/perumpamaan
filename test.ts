@@ -2,7 +2,7 @@ import {
   getRandomPerumpamaan,
   getPerumpamaanWithKeyword,
   getRandomPerumpamaanExcludingKeyword
-} from './index.js';
+} from './index';
 
 console.log('Testing getRandomPerumpamaan...');
 const randomQuote = getRandomPerumpamaan();

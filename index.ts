@@ -1,4 +1,4 @@
-import { dictionary, Quote } from './perumpamaan.js';
+import { dictionary, Quote } from './perumpamaan';
 
 /**
  * @module getRandomPerumpamaan

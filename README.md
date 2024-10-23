@@ -1,4 +1,4 @@
-# Perumpamaan Module
+# Perumpamaan
 
 This module provides functions to retrieve traditional Malay sayings (perumpamaan) from a predefined dictionary. You can get random sayings, find sayings based on keywords, and get random sayings excluding specific ones.
 
@@ -6,8 +6,24 @@ This module provides functions to retrieve traditional Malay sayings (perumpamaa
 
 To use this module, ensure you have TypeScript installed and set up in your project. You can include this module in your TypeScript project as follows:
 
+Deno:
 ```bash
-npm install your-module-name
+deno add jsr:@razmans/perumpamaan
+```
+
+NPM:
+```bash
+npx jsr add @razmans/perumpamaan
+```
+
+PNPM:
+```bash
+pnpm dlx jsr add @razmans/perumpamaan
+```
+
+Bun:
+```bash
+bunx jsr add @razmans/perumpamaan
 ```
 
 ## Usage
@@ -79,7 +95,7 @@ interface Quote {
 
 ## License
 
-This module is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This module is licensed under the MIT License.
 
 ## Contributing
 
